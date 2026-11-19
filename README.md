@@ -1,2 +1,2 @@
 # Fitnissstudio
-batul ist blind geh schlafen
+batul ist Reich hat zu viel Geld
