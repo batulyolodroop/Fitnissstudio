@@ -37,7 +37,7 @@ include('zusatz/session.php');
 <?php
 $page = "";
     if(isset($_GET['Webseite'])) $page = htmlentities($_GET['Webseite']);
-    switch($Webseite) {
+    switch($page) {
       case 'login': include('Webseite/Login.php'); break;
       case 'Geräteverwaltung': include('Webseite/Geräteverwaltung.php'); break;
       case 'Kurseverwaltung': include('Webseite/Kurseverwaltung.php'); break;
