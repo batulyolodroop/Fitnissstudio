@@ -1,8 +1,8 @@
-<?php
-$host = 'v2201910106725100809.hotsrv.de';
+<?php 
+$host = 'localhost';
 $db   = 'db_6it24g1_db1';
 $user = 'db_6it24g1_db1';
-$pass = 'GiNTRrLd3?CUQkXUkj';
+$pass = 'Fitnessstudios1234'; 
 
 $charset = 'utf8mb4';
 
@@ -36,19 +36,26 @@ include('zusatz/session.php');
 
 <?php
 $page = "";
-    if(isset($_GET['page'])) $page = htmlentities($_GET['page']);
+    if(isset($_GET['Webseite'])) $page = htmlentities($_GET['Webseite']);
     switch($page) {
-      case 'login': include('zusatz/Login.php'); break;
-      case 'list': include('LehrmittelHome.php'); break;
-      case 'raum': include('Raum/Raum.php'); break;
-      case 'schrank': include('Raum/Schrank.php'); break;
-      case 'fach': include('Raum/Fach.php'); break;
-      case 'lehrkraft': include('Lehrkraft.php'); break;
-      case 'tags': include('Tags.php'); break;
-      default: include('zusatz/Login.php'); break;
+      case 'login': include('Webseite/Login.php'); break;
+      case 'Geräteverwaltung': include('Webseite/Geräteverwaltung.php'); break;
+      case 'Kurseverwaltung': include('Webseite/Kurseverwaltung.php'); break;
+      case 'Mitgliedverwaltung': include('Webseite/Mitgliedverwaltung.php'); break;
+      case 'Personalverwaltung': include('Webseite/Personalverwaltung.php'); break;
+      case 'Produktverwaltung': include('Webseite/Produktverwaltung.php'); break;
+      case 'Trainerverwaltung': include('Webseite/Trainerverwaltung.php'); break;
+      default: include('Webseite/'); break;
     }
 ?>
 
 <?php include('Dark.php'); ?>
+
+<ul>
+  <li><a href="Webseite/Mitgliedverwaltung.php">Mitgliedverwaltung</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
 </body>
 </html>
