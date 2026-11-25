@@ -37,7 +37,7 @@ include('zusatz/session.php');
 <?php
 $page = "";
     if(isset($_GET['Webseite'])) $page = htmlentities($_GET['Webseite']);
-    switch($page) {
+    switch($Webseite) {
       case 'login': include('Webseite/Login.php'); break;
       case 'Geräteverwaltung': include('Webseite/Geräteverwaltung.php'); break;
       case 'Kurseverwaltung': include('Webseite/Kurseverwaltung.php'); break;
@@ -45,14 +45,14 @@ $page = "";
       case 'Personalverwaltung': include('Webseite/Personalverwaltung.php'); break;
       case 'Produktverwaltung': include('Webseite/Produktverwaltung.php'); break;
       case 'Trainerverwaltung': include('Webseite/Trainerverwaltung.php'); break;
-      default: include('Webseite/'); break;
+      default: include('Webseite/Login.php'); break;
     }
 ?>
 
 <?php include('Dark.php'); ?>
 
 <ul>
-  <li><a href="?Webseite=Mitgliedverwaltung">Mitgliedverwaltung</a></li>
+  <li><a href="Webseite/Mitgliederverwaltung.php">Mitgliedverwaltung</a></li>
   <li><a href="news.asp">News</a></li>
   <li><a href="contact.asp">Contact</a></li>
   <li><a href="about.asp">About</a></li>
