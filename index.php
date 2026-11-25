@@ -52,7 +52,7 @@ $page = "";
 <?php include('Dark.php'); ?>
 
 <ul>
-  <li><a href="Webseite/Mitgliedverwaltung.php">Mitgliedverwaltung</a></li>
+  <li><a href="?Webseite=Mitgliedverwaltung">Mitgliedverwaltung</a></li>
   <li><a href="news.asp">News</a></li>
   <li><a href="contact.asp">Contact</a></li>
   <li><a href="about.asp">About</a></li>
