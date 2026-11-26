@@ -1,8 +1,8 @@
-<?php
-$host = 'v2201910106725100809.hotsrv.de';
+<?php 
+$host = 'localhost';
 $db   = 'db_6it24g1_db1';
 $user = 'db_6it24g1_db1';
-$pass = 'GiNTRrLd3?CUQkXUkj';
+$pass = 'Fitnessstudios1234'; 
 
 $charset = 'utf8mb4';
 
@@ -34,21 +34,35 @@ include('zusatz/session.php');
 <body>
 <?php include('zusatz/Nav.php'); ?>
 
+
 <?php
 $page = "";
-    if(isset($_GET['page'])) $page = htmlentities($_GET['page']);
+    if(isset($_GET['Webseite'])) $page = htmlentities($_GET['Webseite']);
     switch($page) {
-      case 'login': include('zusatz/Login.php'); break;
-      case 'list': include('LehrmittelHome.php'); break;
-      case 'raum': include('Raum/Raum.php'); break;
-      case 'schrank': include('Raum/Schrank.php'); break;
-      case 'fach': include('Raum/Fach.php'); break;
-      case 'lehrkraft': include('Lehrkraft.php'); break;
-      case 'tags': include('Tags.php'); break;
-      default: include('zusatz/Login.php'); break;
+      case 'login': include('Webseite/Login.php'); break;
+      case 'Geraeteverwaltung': include('Webseite/Geraeteverwaltung.php'); break;
+      case 'Kurseverwaltung': include('Webseite/Kurseve:rwaltung.php'); break;
+      case 'Mitgliedverwaltung': include('Webseite/Mitgliedverwaltung.php'); break;
+      case 'Personalverwaltung': include('Webseite/Personalverwaltung.php'); break;
+      case 'Produktverwaltung': include('Webseite/Produktverwaltung.php'); break;
+      case 'Trainerverwaltung': include('Webseite/Trainerverwaltung.php'); break;
+      default: include('Webseite/Login.php'); break;
     }
 ?>
 
 <?php include('Dark.php'); ?>
+
+
+<ul>
+
+  <li><a href="Webseite/Geraeteverwaltung.php">Geräteverwaltung</a></li>
+  <li><a href="Webseite/Kursverwaltung.php">Kurseverwaltung</a></li>
+    <li><a href="Webseite/Mitgliederverwaltung.php">Mitgliedverwaltung</a></li>
+    <li><a href="Webseite/Personalverwaltung.php">Personalverwaltung</a></li>
+    <li><a href="Webseite/Produktverwaltung.php">Produktverwaltung</a></li>
+    <li><a href="Webseite/Trainerverwaltung.php">Trainerverwaltung</a></li>
+
+  
+</ul>
 </body>
 </html>
