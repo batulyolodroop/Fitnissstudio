@@ -25,6 +25,8 @@ try {
 
 $stmt = null;
 $conn = null;
+?> 
+
 
 <!DOCTYPE html>
 <html lang="de">
@@ -38,4 +40,4 @@ $conn = null;
     
 </body>
 </html>
-?>
+

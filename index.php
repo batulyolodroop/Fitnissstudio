@@ -17,7 +17,6 @@ try {
     die("Datenbankverbindung fehlgeschlagen: " . $e->getMessage());
 }
 
-include('zusatz/session.php');
 
 ?>
 
@@ -32,7 +31,7 @@ include('zusatz/session.php');
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-<?php include('zusatz/Nav.php'); ?>
+
 
 
 <?php
@@ -50,7 +49,7 @@ $page = "";
     }
 ?>
 
-<?php include('Dark.php'); ?>
+
 
 
 <ul>
