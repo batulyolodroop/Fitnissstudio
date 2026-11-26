@@ -27,7 +27,7 @@ try {
   $result = $conn->query($sql);
   // Process the result set
   if ($result->rowCount() > 0) {
-    echo "<table><tr><th>ID</th><th>Vorname</th><th>Nachname</th></tr>";
+    echo "<table><tr><th>ID</th><th>Vorname</th><th>Nachname</th><th>Mitgliedschaft</th></tr>";
     // Output data of each row
     while($row = $result->fetch()) {
       echo "<tr>";
