@@ -20,7 +20,9 @@ try {
 include('zusatz/session.php');
 
 try {
-  $sql = "SELECT Tbl_Mitglieder.PK_Mitglieder, Tbl_Mitglieder.Vorname, Tbl_Mitglieder.Nachname FROM Tbl_Mitglieder";
+  $sql = "SELECT Tbl_Mitglieder.PK_Mitglieder, Tbl_Mitglieder.Vorname, Tbl_Mitglieder.Nachname, Tbl_Mitgliedschaften.Name FROM Tbl_Mitglieder 
+          INNER JOIN zTbl_MitgliedMitgliedschaften ON zTbl_MitgliedMitgliedschaften.FK_Mitglied = Tbl_Mitglieder.PK_Mitglieder
+          INNER JOIN Tbl_Mitgliedschaften ON zTbl_MitgliedMitgliedschaften.FK_Mitgliedschaft = Tbl_Mitgliedschaften.PK_Mitgliedschaft";
   // Execute the SQL query
   $result = $conn->query($sql);
   // Process the result set
