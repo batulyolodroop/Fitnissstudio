@@ -53,13 +53,13 @@ $page = "";
 
 <ul>
 
-  <li><a href="Webseite/Mitgliedverwaltung.php">Mitgliedverwaltung</a></li>
-  <li><a href="Webseite/Kurseverwaltung.php">Kurseverwaltung</a></li>
-    <li><a href="Webseite/Mitgliedverwaltung.php">Mitgliedverwaltung</a></li>
+  <li><a href="Webseite/Mitgliederverwaltung.php">Mitgliederverwaltung</a></li>
+  <li><a href="Webseite/Kursverwaltung.php">Kurseverwaltung</a></li>
+    <li><a href="Webseite/Mitgliederverwaltung.php">Mitgliedverwaltung</a></li>
     <li><a href="Webseite/Personalverwaltung.php">Personalverwaltung</a></li>
     <li><a href="Webseite/Produktverwaltung.php">Produktverwaltung</a></li>
     <li><a href="Webseite/Trainerverwaltung.php">Trainerverwaltung</a></li>
-=======
+
   
 </ul>
 </body>
