@@ -54,11 +54,11 @@ $page = "";
 <ul>
 
   <li><a href="Webseite/Mitgliedverwaltung.php">Mitgliedverwaltung</a></li>
-  <li><a href="Webseite/Kurseverwaltung.php">News</a></li>
-    <li><a href="Webseite/Mitgliedverwaltung.php">Contact</a></li>
-    <li><a href="Webseite/Personalverwaltung.php">About</a></li>
-    <li><a href="Webseite/Produktverwaltung.php">About</a></li>
-    <li><a href="Webseite/Trainerverwaltung.php">About</a></li>
+  <li><a href="Webseite/Kurseverwaltung.php">Kurseverwaltung</a></li>
+    <li><a href="Webseite/Mitgliedverwaltung.php">Mitgliedverwaltung</a></li>
+    <li><a href="Webseite/Personalverwaltung.php">Personalverwaltung</a></li>
+    <li><a href="Webseite/Produktverwaltung.php">Produktverwaltung</a></li>
+    <li><a href="Webseite/Trainerverwaltung.php">Trainerverwaltung</a></li>
 =======
   
 </ul>
