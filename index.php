@@ -39,8 +39,8 @@ $page = "";
     if(isset($_GET['Webseite'])) $page = htmlentities($_GET['Webseite']);
     switch($page) {
       case 'login': include('Webseite/Login.php'); break;
-      case 'Geräteverwaltung': include('Webseite/Geräteverwaltung.php'); break;
-      case 'Kurseverwaltung': include('Webseite/Kurseverwaltung.php'); break;
+      case 'Geraeteverwaltung': include('Webseite/Geraeteverwaltung.php'); break;
+      case 'Kurseverwaltung': include('Webseite/Kurseve:rwaltung.php'); break;
       case 'Mitgliedverwaltung': include('Webseite/Mitgliedverwaltung.php'); break;
       case 'Personalverwaltung': include('Webseite/Personalverwaltung.php'); break;
       case 'Produktverwaltung': include('Webseite/Produktverwaltung.php'); break;
@@ -51,9 +51,10 @@ $page = "";
 
 <?php include('Dark.php'); ?>
 
+
 <ul>
 
-  <li><a href="Webseite/Mitgliederverwaltung.php">Mitgliederverwaltung</a></li>
+  <li><a href="Webseite/Geraeteverwaltung.php">Geraeteverwaltung</a></li>
   <li><a href="Webseite/Kursverwaltung.php">Kurseverwaltung</a></li>
     <li><a href="Webseite/Mitgliederverwaltung.php">Mitgliedverwaltung</a></li>
     <li><a href="Webseite/Personalverwaltung.php">Personalverwaltung</a></li>
