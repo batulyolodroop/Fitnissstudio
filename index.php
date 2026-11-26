@@ -34,6 +34,7 @@ include('zusatz/session.php');
 <body>
 <?php include('zusatz/Nav.php'); ?>
 
+
 <?php
 $page = "";
     if(isset($_GET['Webseite'])) $page = htmlentities($_GET['Webseite']);
