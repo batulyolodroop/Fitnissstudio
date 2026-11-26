@@ -13,7 +13,7 @@ try {
 }
 
 try {
-  $sql = "Select * From Tbl_Trainer";
+  $sql = "Select * From Tbl_Trainer ";
   // Prepare the SQL query template
   $stmt = $conn->prepare($sql);
   // Execute with values
