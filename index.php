@@ -54,7 +54,7 @@ $page = "";
 
 <ul>
 
-  <li><a href="Webseite/Geraeteverwaltung.php">Geraeteverwaltung</a></li>
+  <li><a href="Webseite/Geraeteverwaltung.php">Geräteverwaltung</a></li>
   <li><a href="Webseite/Kursverwaltung.php">Kurseverwaltung</a></li>
     <li><a href="Webseite/Mitgliederverwaltung.php">Mitgliedverwaltung</a></li>
     <li><a href="Webseite/Personalverwaltung.php">Personalverwaltung</a></li>
