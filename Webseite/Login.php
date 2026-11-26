@@ -40,15 +40,25 @@ $conn = null;
   <title>Document</title>
 </head>
 <body>
-  
+
+<form method="post" action="login.php">
+
 <input type="text" name="username" placeholder="Username">
 <input type="password" name="password" placeholder="Password">
-<input type="submit" value="Login">
+<button type="submit">Login</button>
 
+</form>
 </body>
 </html>
 
 <?php
+
+if($_POST["username"] == "admin" && $_POST["password"] == "1234") {
+  $_SESSION["username"] = $_POST["username"];
+  $_SESSION["password"] = $_POST["password"];
+}
+
+
 // Output session variables that were set on previous page
 if(isset($_SESSION["username"]) && isset($_SESSION["password"])) {
   echo "username is " . $_SESSION["username"] . ".<br>";
