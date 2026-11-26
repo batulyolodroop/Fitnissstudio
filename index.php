@@ -1,4 +1,8 @@
 <?php
+session_start();
+?>
+
+<?php
 $host = 'v2201910106725100809.hotsrv.de';
 $db   = 'db_6it24g1_db1';
 $user = 'db_6it24g1_db1';
