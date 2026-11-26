@@ -20,18 +20,21 @@ try {
 include('zusatz/session.php');
 
 try {
-  $sql = "SELECT Tbl_Mitglieder.PK_Mitglieder, Tbl_Mitglieder.Vorname, Tbl_Mitglieder.Nachname FROM Tbl_Mitglieder";
+  $sql = "SELECT Tbl_Mitglieder.PK_Mitglieder, Tbl_Mitglieder.Vorname, Tbl_Mitglieder.Nachname, Tbl_Mitgliedschaften.Name FROM Tbl_Mitglieder 
+          LEFT JOIN zTbl_MitgliedMitgliedschaften ON zTbl_MitgliedMitgliedschaften.FK_Mitglied = Tbl_Mitglieder.PK_Mitglieder
+          LEFT JOIN Tbl_Mitgliedschaften ON zTbl_MitgliedMitgliedschaften.FK_Mitgliedschaft = Tbl_Mitgliedschaften.PK_Mitgliedschaft";
   // Execute the SQL query
   $result = $conn->query($sql);
   // Process the result set
   if ($result->rowCount() > 0) {
-    echo "<table><tr><th>ID</th><th>Vorname</th><th>Nachname</th></tr>";
+    echo "<table><tr><th>ID</th><th>Vorname</th><th>Nachname</th><th>Mitgliedschaft</th></tr>";
     // Output data of each row
     while($row = $result->fetch()) {
       echo "<tr>";
       echo "<td>" . $row['PK_Mitglieder'] . "</td>";
       echo "<td>" . $row['Vorname'] . "</td>";
       echo "<td>" . $row['Nachname'] . "</td>";
+       echo "<td>" . $row['Name'] . "</td>";
       echo "</tr>";
     }
     echo "</table>";
