@@ -53,9 +53,11 @@ $page = "";
 
 <ul>
   <li><a href="Webseite/Mitgliedverwaltung.php">Mitgliedverwaltung</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
+  <li><a href="Webseite/Kurseverwaltung.php">News</a></li>
+    <li><a href="Webseite/Mitgliedverwaltung.php">Contact</a></li>
+    <li><a href="Webseite/Personalverwaltung.php">About</a></li>
+    <li><a href="Webseite/Produktverwaltung.php">About</a></li>
+    <li><a href="Webseite/Trainerverwaltung.php">About</a></li>
 </ul>
 </body>
 </html>
