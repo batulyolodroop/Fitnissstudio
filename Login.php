@@ -31,3 +31,29 @@ try {
 $stmt = null;
 $conn = null;
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<input type="text" name="username" placeholder="Username">
+<input type="password" name="password" placeholder="Password">
+<input type="submit" value="Login">
+
+</body>
+</html>
+
+<?php
+// Output session variables that were set on previous page
+if(isset($_SESSION["username"]) && isset($_SESSION["password"])) {
+  echo "username is " . $_SESSION["username"] . ".<br>";
+  echo "password is " . $_SESSION["password"] . ".";
+} else {
+  echo "No username or password found.";
+}
+?>
