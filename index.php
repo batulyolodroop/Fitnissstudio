@@ -45,19 +45,22 @@ $page = "";
       case 'Personalverwaltung': include('Webseite/Personalverwaltung.php'); break;
       case 'Produktverwaltung': include('Webseite/Produktverwaltung.php'); break;
       case 'Trainerverwaltung': include('Webseite/Trainerverwaltung.php'); break;
-      default: include('Webseite/'); break;
+      default: include('Webseite/Login.php'); break;
     }
 ?>
 
 <?php include('Dark.php'); ?>
 
 <ul>
+
   <li><a href="Webseite/Mitgliedverwaltung.php">Mitgliedverwaltung</a></li>
   <li><a href="Webseite/Kurseverwaltung.php">News</a></li>
     <li><a href="Webseite/Mitgliedverwaltung.php">Contact</a></li>
     <li><a href="Webseite/Personalverwaltung.php">About</a></li>
     <li><a href="Webseite/Produktverwaltung.php">About</a></li>
     <li><a href="Webseite/Trainerverwaltung.php">About</a></li>
+=======
+  
 </ul>
 </body>
 </html>
