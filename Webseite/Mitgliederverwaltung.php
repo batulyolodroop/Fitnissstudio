@@ -27,13 +27,14 @@ try {
   $result = $conn->query($sql);
   // Process the result set
   if ($result->rowCount() > 0) {
-    echo "<table><tr><th>ID</th><th>Vorname</th><th>Nachname</th></tr>";
+    echo "<table><tr><th>ID</th><th>Vorname</th><th>Nachname</th><th>Mitgliedschaft</th></tr>";
     // Output data of each row
     while($row = $result->fetch()) {
       echo "<tr>";
       echo "<td>" . $row['PK_Mitglieder'] . "</td>";
       echo "<td>" . $row['Vorname'] . "</td>";
       echo "<td>" . $row['Nachname'] . "</td>";
+       echo "<td>" . $row['Name'] . "</td>";
       echo "</tr>";
     }
     echo "</table>";
