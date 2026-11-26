@@ -34,6 +34,7 @@ try {
       echo "<td>" . $row['PK_Mitglieder'] . "</td>";
       echo "<td>" . $row['Vorname'] . "</td>";
       echo "<td>" . $row['Nachname'] . "</td>";
+       echo "<td>" . $row['Name'] . "</td>";
       echo "</tr>";
     }
     echo "</table>";
